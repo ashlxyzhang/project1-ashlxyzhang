@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fishing Minigame</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/persimmons/persimmon.svg"
+    />
+  </head>
+  <body>
+    <nav class="flex w-100">
+      <div class="flex w-100 pd-nav">
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+        <ul class="flex gap-8 center-v">
+          <li>
+            <a href="index_html.html" class="pd-nav-li"> Home </a>
+          </li>
+          <li><a href="portfolio_html.html" class="pd-nav-li">Portfolio</a></li>
+          <li>
+            <a href="qualifications_html.html" class="pd-nav-li">Quals</a>
+          </li>
+          <li><a href="service_html.html" class="pd-nav-li">Service</a></li>
+          <li>
+            <a href="ai_html.html" class="pd-nav-li active"
+              >AI<img
+                src="public/persimmons/persimmon.svg"
+                alt=""
+                class="absolute-persimmon"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main ai-bg">
+      <div class="fishing">
+        <div class="flex gap-8">
+          <h1 class="title">AI</h1>
+          <img
+            src="public/persimmons/persimmon_ai.svg"
+            alt="AI Icon"
+            style="width: 150px"
+          />
+        </div>
+        <img
+          class="fishing-img"
+          id="fishing-pole"
+          src="public/icons/fishing_rod.webp"
+          alt="Fishing Pole"
+        />
+        <div id="fished-obj" class="fished grey-text"></div>
+        <button class="button" onclick="moveRod()">Fish</button>
+        <button class="button" onclick="addToInventory()">
+          Add to Inventory
+        </button>
+        <div class="inventory">
+          <h4 class="grey-text">Inventory</h4>
+          <div id="inventory-grid" class="inventory-grid"></div>
+        </div>
+      </div>
+      <p class="prompt grey-text">
+        Generate HTML and inline CSS for a fishing minigame. Make all inline CSS
+        its own class name. The const objs = "🐡𓇼🐟💫🫧🐚🦀💌🌟🐠🐙🦑🪸⭐️🌀"; and
+        there should be an inventory. Make the fishing pole bob up and down when
+        the user clicks a fish button. Then, one of the objects should pop up
+        and the user can add to their inventory. Put "AI" somewhere on the page
+        with the class name title, next to "public/persimmons/persimmon_ai.svg"
+        and flex them with class .gap-8. Use the grey-text class for all text
+        except the title. Use "public/icons/fishing_rod.webp" for the rod. Use
+        <code>&lt;link rel="stylesheet" href="style1.css" /&gt;</code> for the
+        title styling and .grey-text class. Use .ai-bg class for main from
+        style1. Put this prompt somewhere on the page.
+      </p>
+    </main>
+
+    <script>
+      const objs = "🐡𓇼🐟💫🫧🐚🦀💌🌟🐠🐙🦑🪸⭐️🌀";
+      const inventory = new Array(9).fill("");
+      let currentObj = "";
+
+      function findObj(objs) {
+        const len = objs.length - 2;
+        const num = Math.floor((Math.random() * len) / 2) * 2;
+        return objs.slice(num, num + 2);
+      }
+
+      function moveRod() {
+        const pole = document.getElementById("fishing-pole");
+        const fishedObj = document.getElementById("fished-obj");
+        fishedObj.classList.remove("visible");
+        pole.classList.add("move-rod");
+        setTimeout(() => {
+          pole.classList.remove("move-rod");
+          currentObj = findObj(objs);
+          fishedObj.textContent = currentObj;
+          fishedObj.classList.add("visible");
+        }, 2000);
+      }
+
+      function addToInventory() {
+        const inventoryGrid = document.getElementById("inventory-grid");
+        const emptyIndex = inventory.findIndex((item) => item === "");
+        if (currentObj && emptyIndex !== -1) {
+          inventory[emptyIndex] = currentObj;
+          renderInventory(inventoryGrid);
+        }
+      }
+
+      function renderInventory(grid) {
+        grid.innerHTML = inventory
+          .map((item) => `<span class="inventory-item">${item}</span>`)
+          .join("");
+      }
+    </script>
+  </body>
+</html>

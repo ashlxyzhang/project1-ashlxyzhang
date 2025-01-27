@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashley Zhang</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/persimmons/persimmon.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <script src="components/social.js" type="text/javascript" defer></script>
+    <script src="components/projects.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <nav class="flex w-100">
+      <div class="flex w-100 pd-nav">
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+        <ul class="flex gap-8 center-v">
+          <li>
+            <a href="index_html.html" class="pd-nav-li">Home</a>
+          </li>
+          <li>
+            <a href="portfolio_html.html" class="active pd-nav-li">
+              Portfolio
+              <img
+                src="public/persimmons/persimmon.svg"
+                alt=""
+                class="absolute-persimmon"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="qualifications_html.html" class="pd-nav-li">Quals</a>
+          </li>
+          <li><a href="service_html.html" class="pd-nav-li">Service</a></li>
+          <li><a href="ai_html.html" class="pd-nav-li">AI</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex center-h h-100 bg portfolio-bg">
+      <div class="flex center-h gap-4 mx-4 max-w-screen-xl mt-top">
+        <div class="w-60 flex-col" id="project-container"></div>
+        <div class="w-fit flex flex-col right-v mx-8 w-40">
+          <h1 class="title mb-4">
+            <strong>Portfolio</strong>
+          </h1>
+          <social-links class="mb-4"></social-links>
+          <img
+            src="public/persimmons/persimmon_portfolio.svg"
+            alt=""
+            class="w-80"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="flex gap-2">
+        <p>© 2025 Ashley Zhang</p>
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+      </div>
+    </footer>
+  </body>
+</html>

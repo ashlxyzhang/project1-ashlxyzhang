@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashley Zhang</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/persimmons/persimmon.svg"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+
+    <script src="components/social.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <nav class="flex w-100">
+      <div class="flex w-100 pd-nav">
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+        <ul class="flex gap-8 center-v">
+          <li>
+            <a href="index_html.html" class="pd-nav-li">Home</a>
+          </li>
+          <li>
+            <a href="portfolio_html.html" class="pd-nav-li"> Portfolio </a>
+          </li>
+          <li>
+            <a href="qualifications_html.html" class="active pd-nav-li">
+              Quals
+              <img
+                src="public/persimmons/persimmon.svg"
+                alt=""
+                class="absolute-persimmon"
+              />
+            </a>
+          </li>
+          <li><a href="service_html.html" class="pd-nav-li">Service</a></li>
+          <li><a href="ai_html.html" class="pd-nav-li">AI</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex flex-col bg quals-bg pd-main">
+      <div class="w-100">
+        <h1 class="title mb-4 mt-top">
+          <strong>Qualifications</strong>
+        </h1>
+        <social-links></social-links>
+        <div class="flex gap-16 my-8">
+          <iframe
+            src="https://drive.google.com/file/d/1TzDkWyfm9Xj5hH103tTk4wVQmrJW8wAJ/preview"
+            width="768"
+            height="994"
+            class="drop-shadow"
+          ></iframe>
+          <div class="flex flex-col flex-1 gap-8">
+            <div class="qual-container flex flex-col">
+              <p class="qual-header mb-4">Languages</p>
+              <div class="flex h-9 around-h">
+                <i class="devicon-cplusplus-plain orange-text font-9"></i>
+                <i class="devicon-python-plain orange-text font-9"></i>
+                <i class="devicon-java-plain orange-text font-9"></i>
+                <i class="devicon-javascript-plain orange-text font-9"></i>
+                <i class="devicon-typescript-plain orange-text font-9"></i>
+                <img src="public/icons/html.svg" alt="" />
+                <img src="public/icons/css.svg" alt="" />
+                <img src="public/icons/sql.svg" alt="" />
+              </div>
+            </div>
+            <div class="qual-container flex flex-col">
+              <p class="qual-header mb-4">Stack</p>
+              <div class="flex h-9 around-h">
+                <i class="devicon-react-plain orange-text font-9"></i>
+                <i class="devicon-nextjs-plain orange-text font-9"></i>
+                <i class="devicon-flask-plain orange-text font-9"></i>
+                <i class="devicon-mongodb-plain orange-text font-9"></i>
+                <i class="devicon-tailwindcss-plain orange-text font-9"></i>
+                <i class="devicon-firebase-plain orange-text font-9"></i>
+                <i class="devicon-git-plain orange-text font-9"></i>
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                  class="h-9"
+                />
+              </div>
+            </div>
+            <div class="qual-container flex flex-col">
+              <p class="qual-header mb-4">Interests</p>
+              <div class="flex">
+                <p class="grey-text">
+                  I enjoy exploring creative outlets like Blender for 3D design
+                  and fashion as a form of personal expression. Shoegaze is
+                  always on my playlist—it&rsquo;s the perfect background for
+                  getting lost in thought. I&rsquo;m also drawn to synthesizers
+                  and the endless possibilities they offer for making unique
+                  sounds. When it comes to reading, I have a soft spot for
+                  medieval fiction with its rich worlds and complex characters.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="flex gap-2">
+        <p>© 2025 Ashley Zhang</p>
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+      </div>
+    </footer>
+  </body>
+</html>

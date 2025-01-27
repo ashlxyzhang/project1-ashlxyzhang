@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashley Zhang</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/persimmons/persimmon.svg"
+    />
+
+    <script src="components/social.js" type="text/javascript" defer></script>
+  </head>
+  <body>
+    <nav class="flex w-100">
+      <div class="flex w-100 pd-nav">
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+        <ul class="flex gap-8 center-v">
+          <li>
+            <a href="index_html.html" class="pd-nav-li">Home</a>
+          </li>
+          <li>
+            <a href="portfolio_html.html" class="pd-nav-li"> Portfolio </a>
+          </li>
+          <li>
+            <a href="qualifications_html.html" class="pd-nav-li"> Quals </a>
+          </li>
+          <li>
+            <a href="service_html.html" class="active pd-nav-li">
+              Service
+              <img
+                src="public/persimmons/persimmon.svg"
+                alt=""
+                class="absolute-persimmon"
+              />
+            </a>
+          </li>
+          <li><a href="ai_html.html" class="pd-nav-li">AI</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex flex-col bg service-bg pd-main">
+      <div class="w-100">
+        <div class="flex center-v mt-top gap-16">
+          <div class="flex flex-col mb-4">
+            <h1 class="title">
+              <strong>Service</strong>
+            </h1>
+            <social-links></social-links>
+          </div>
+          <img src="public/persimmons/persimmon_service.svg" alt="" />
+          <div class="qual-container flex flex-col w-30">
+            <p class="qual-header mb-4">CSCE 312 Peer Teacher</p>
+            <div class="flex mx-4 grey-text font-18">
+              <ul>
+                <li>lab assistance + office hours</li>
+                <li>
+                  helping students in HDL chip design and Hack Assembly
+                  programming
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-8 my-8">
+          <div class="flex flex-col gap-4 w-60">
+            <div class="qual-container flex flex-col w-70">
+              <p class="qual-header mb-4">
+                Engineering Teaching Assistant Organization
+              </p>
+              <div class="flex mx-4 grey-text font-18">
+                <ul>
+                  <li>ENGR 102 + 216 reviews, content, lab assistance</li>
+                  <li>big tech intern panel</li>
+                  <li>resume review workshop</li>
+                  <li>ETAM essay review</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-50">
+                <img src="public/service/3.jpeg" alt="" class="radius-8" />
+              </div>
+              <div class="flex flex-col gap-4 w-50">
+                <img src="public/service/4.jpg" alt="" class="radius-8" />
+                <div class="qual-container flex flex-col">
+                  <p class="qual-header mb-4">Gladiator Dash</p>
+                  <div class="flex mx-4 grey-text font-18">
+                    <ul>
+                      <li>3.1 mile mud run benefiting Still Creek Ranch</li>
+                      <li>organized by A&M men&rsquo;s org, One Army</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex w-50 flex-col gap-4 center-h">
+            <div class="w-img">
+              <img src="public/service/1.jpg" alt="" class="radius-8" />
+            </div>
+            <div class="w-img1">
+              <img src="public/service/2.jpg" alt="" class="radius-8" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="flex gap-2">
+        <p>© 2025 Ashley Zhang</p>
+        <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+:root {
+  --grey-text: #484848;
+  --orange: #ff9448;
+  --hover-orange: #b3662f;
+  --yellow: #fff4c5;
+  --green: #84b47d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter";
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  color: var(--grey-text);
+}
+
+.title {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  color: var(--yellow);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: var(--orange);
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--grey-text);
+}
+
+a {
+  color: var(--grey-text);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.home-bg {
+  background-image: url("public/bgs/bg_home.svg");
+  background-position: right;
+}
+
+.portfolio-bg {
+  background-image: url("public/bgs/bg_portfolio.svg");
+  background-position: left;
+}
+
+.quals-bg {
+  background-image: url("public/bgs/bg_quals.svg");
+  background-position: right;
+}
+
+.service-bg {
+  background-image: url("public/bgs/bg_service.svg");
+  background-position: right;
+}
+
+.ai-bg {
+  background-color: var(--yellow);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.center-h {
+  justify-content: center;
+}
+.right-h {
+  justify-content: right;
+}
+.around-h {
+  justify-content: space-around;
+}
+.between-h {
+  justify-content: space-between;
+}
+
+.center-v {
+  align-items: center;
+}
+.right-v {
+  align-items: end;
+}
+
+.w-30 {
+  width: 30%;
+}
+.w-40 {
+  width: 40%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-70 {
+  width: 70%;
+}
+.w-80 {
+  width: 80%;
+}
+.w-100 {
+  width: 100%;
+}
+.w-fit {
+  width: fit-content;
+}
+.max-w-screen-xl {
+  width: 1280px;
+}
+
+.h-6 {
+  height: 24px;
+}
+.h-9 {
+  height: 36px;
+}
+.h-30 {
+  height: 30%;
+}
+.h-40 {
+  height: 40%;
+}
+.h-50 {
+  height: 50%;
+}
+.h-60 {
+  height: 60%;
+}
+.h-80 {
+  height: 80%;
+}
+.h-100 {
+  height: 100%;
+}
+.w-img {
+  width: 550px;
+}
+.w-img1 {
+  width: 450px;
+}
+
+.gap {
+  gap: 48px;
+}
+.gap-2 {
+  gap: 8px;
+}
+.gap-4 {
+  gap: 16px;
+}
+.gap-6 {
+  gap: 24px;
+}
+.gap-8 {
+  gap: 32px;
+}
+.gap-12 {
+  gap: 48px;
+}
+.gap-16 {
+  gap: 64px;
+}
+
+.pd-main {
+  padding: 0px 128px;
+}
+.pd-nav {
+  padding: 0px 50px;
+}
+.pd-nav-li {
+  padding: 6px 16px;
+}
+
+.mx-4 {
+  margin: 0px 16px;
+}
+.mx-8 {
+  margin: 0px 32px;
+}
+.my-4 {
+  margin: 16px 0px;
+}
+.my-8 {
+  margin: 32px 0px;
+}
+.mb-4 {
+  margin-bottom: 24px;
+}
+.mt-top {
+  margin-top: 128px;
+}
+
+.desc {
+  transition: margin-left 0.3s ease;
+}
+.desc:hover {
+  margin-left: 25px;
+}
+
+.font-6 {
+  font-size: 24px;
+}
+.font-18 {
+  font-size: 18px;
+}
+.font-9 {
+  font-size: 36px;
+}
+
+nav {
+  position: absolute;
+}
+
+footer {
+  position: fixed;
+}
+
+nav {
+  top: 50px;
+  font-size: 18px;
+}
+
+nav > div > ul {
+  list-style-type: none;
+  margin-left: auto;
+}
+
+ul > li > a {
+  transition: all 0.2s ease-in-out;
+}
+ul > li > a:hover,
+.active {
+  color: var(--orange);
+  background-color: var(--yellow);
+  border-radius: 8px;
+  box-shadow: inset 0px 0px 0px 1px var(--orange);
+}
+
+.absolute-persimmon {
+  position: absolute;
+  width: 25px;
+  top: -6px;
+}
+
+footer {
+  bottom: 25px;
+  right: 25px;
+  font-size: 12px;
+}
+
+footer > div > img {
+  width: 25px;
+}
+
+.grey-text {
+  color: var(--grey-text);
+}
+.orange-text {
+  color: var(--orange);
+}
+.green-text {
+  color: var(--green);
+}
+
+footer,
+nav,
+h2,
+.font-light {
+  font-weight: 250;
+}
+
+.drop-shadow {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+hr {
+  margin: 1rem 2rem;
+  border: 0;
+  border-top: 1px solid;
+  border-top-width: 1px;
+  opacity: 0.25;
+}
+
+.devicon-nodejs-plain {
+  font-family: "devicon-v2.15.1" !important;
+}
+
+iframe {
+  border: var(--orange) solid 1px;
+  border-radius: 8px;
+}
+
+.qual-container {
+  background-color: var(--yellow);
+  border: var(--orange) solid 1px;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.radius-8 {
+  border-radius: 8px;
+}
+
+.qual-header {
+  color: var(--hover-orange);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.flex-1 {
+  flex: 1;
+}

@@ -9,6 +9,88 @@
       type="image/x-icon"
       href="public/persimmons/persimmon.svg"
     />
+
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .fishing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .inventory {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .inventory-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 60px);
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .inventory-item {
+        font-size: 40px;
+      }
+
+      .fishing-img {
+        width: 100px;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .move-rod {
+        animation: bob 0.5s infinite alternate;
+      }
+
+      @keyframes bob {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-20px);
+        }
+      }
+
+      .fished {
+        font-size: 40px;
+        margin: 10px 0;
+        display: none;
+      }
+
+      .fished.visible {
+        display: block;
+      }
+
+      .button {
+        padding: 10px 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      .prompt {
+        margin-top: 30px;
+        font-size: 14px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <nav class="flex w-100">
@@ -16,15 +98,13 @@
         <img src="public/persimmons/persimmon.svg" alt="Persimmon" />
         <ul class="flex gap-8 center-v">
           <li>
-            <a href="index_html.html" class="pd-nav-li"> Home </a>
+            <a href="index.html" class="pd-nav-li"> Home </a>
           </li>
-          <li><a href="portfolio_html.html" class="pd-nav-li">Portfolio</a></li>
+          <li><a href="portfolio.html" class="pd-nav-li">Portfolio</a></li>
+          <li><a href="qualifications.html" class="pd-nav-li">Quals</a></li>
+          <li><a href="service.html" class="pd-nav-li">Service</a></li>
           <li>
-            <a href="qualifications_html.html" class="pd-nav-li">Quals</a>
-          </li>
-          <li><a href="service_html.html" class="pd-nav-li">Service</a></li>
-          <li>
-            <a href="ai_html.html" class="pd-nav-li active"
+            <a href="genai.html" class="pd-nav-li active"
               >AI<img
                 src="public/persimmons/persimmon.svg"
                 alt=""
@@ -69,9 +149,9 @@
         with the class name title, next to "public/persimmons/persimmon_ai.svg"
         and flex them with class .gap-8. Use the grey-text class for all text
         except the title. Use "public/icons/fishing_rod.webp" for the rod. Use
-        <code>&lt;link rel="stylesheet" href="style1.css" /&gt;</code> for the
-        title styling and .grey-text class. Use .ai-bg class for main from
-        style1. Put this prompt somewhere on the page.
+        <link rel="stylesheet" href="style1.css" /> for the title styling and
+        .grey-text class. Use .ai-bg class for main from style1. Put this prompt
+        somewhere on the page.
       </p>
     </main>
 
